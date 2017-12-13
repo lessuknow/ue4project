@@ -1,4 +1,4 @@
-﻿Log file open, 12/13/17 00:06:15
+﻿Log file open, 12/13/17 01:01:36
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: MyProject3
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-767075558) SRandInit(-767075558).
+LogInit: Display: RandInit(307097311) SRandInit(307097311).
 LogInit: Read version file with build ID '3709383'
 LogInit: Overriding engine version to CL 3754814, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
-LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.193835
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.206262
 LogD3D11RHI: Aftermath initialized
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
@@ -194,1151 +194,464 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.12.13-05.06.17:005][  0]LogInit: Selected Device Profile: [Windows]
-[2017.12.13-05.06.17:005][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.12.13-05.06.17:021][  0]LogInit: Computer: DESKTOP-F5R04J0
-[2017.12.13-05.06.17:021][  0]LogInit: User: ChristopherChen
-[2017.12.13-05.06.17:021][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.12.13-05.06.17:021][  0]LogInit: High frequency timer resolution =2.435776 MHz
-[2017.12.13-05.06.17:022][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.12.13-05.06.17:022][  0]LogMemory: Platform Memory Stats for Windows
-[2017.12.13-05.06.17:022][  0]LogMemory: Process Physical Memory: 274.66 MB used, 274.66 MB peak
-[2017.12.13-05.06.17:022][  0]LogMemory: Process Virtual Memory: 269.90 MB used, 269.90 MB peak
-[2017.12.13-05.06.17:022][  0]LogMemory: Physical Memory: 7100.86 MB used,  9195.41 MB free, 16296.27 MB total
-[2017.12.13-05.06.17:022][  0]LogMemory: Virtual Memory: 678.14 MB used,  9195.41 MB free, 134217728.00 MB total
-[2017.12.13-05.06.17:199][  0]LogInit: Using OS detected language (en-US).
-[2017.12.13-05.06.17:199][  0]LogInit: Using OS detected locale (en-US).
-[2017.12.13-05.06.17:202][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.12.13-05.06.17:766][  0]LogInit: Setting process to per monitor DPI aware
-[2017.12.13-05.06.18:080][  0]LogD3D11RHI: D3D11 adapters:
-[2017.12.13-05.06.18:122][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2017.12.13-05.06.18:122][  0]LogD3D11RHI:       4065/0/8148 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.12.13-05.06.18:128][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2017.12.13-05.06.18:128][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.12.13-05.06.18:130][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.12.13-05.06.18:130][  0]LogD3D11RHI:       0/0/8148 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.12.13-05.06.18:130][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.12.13-05.06.18:137][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.12.13-05.06.18:137][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
-[2017.12.13-05.06.18:137][  0]LogWindows: EnumDisplayDevices:
-[2017.12.13-05.06.18:137][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.12.13-05.06.18:137][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2017.12.13-05.06.18:137][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.12.13-05.06.18:138][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2017.12.13-05.06.18:138][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
-[2017.12.13-05.06.18:138][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2017.12.13-05.06.18:138][  0]LogD3D11RHI:      Driver Date: Unknown
-[2017.12.13-05.06.18:138][  0]LogRHI: Texture pool is 2846 MB (70% of 4065 MB)
-[2017.12.13-05.06.18:166][  0]LogD3D11RHI: Async texture creation enabled
-[2017.12.13-05.06.18:276][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.12.13-05.06.18:278][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Intermediate/Shaders/WorkingDirectory/16852/).
-[2017.12.13-05.06.18:278][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Christopher Chen/AppData/Local/Temp/UnrealShaderWorkingDir/CA0D8F9344583A3B8226FBAAD637C42B/'.
-[2017.12.13-05.06.18:278][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2017.12.13-05.06.19:511][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2017.12.13-05.06.19:576][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2017.12.13-05.06.19:640][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2017.12.13-05.06.19:704][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2017.12.13-05.06.19:769][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2017.12.13-05.06.19:832][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2017.12.13-05.06.19:896][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.12.13-05.06.19:959][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2017.12.13-05.06.20:013][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2017.12.13-05.06.20:075][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2017.12.13-05.06.20:137][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2017.12.13-05.06.20:199][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2017.12.13-05.06.20:260][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2017.12.13-05.06.20:321][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2017.12.13-05.06.20:445][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2017.12.13-05.06.20:445][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.12.13-05.06.20:508][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2017.12.13-05.06.20:556][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2017.12.13-05.06.20:660][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2017.12.13-05.06.20:694][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2017.12.13-05.06.20:755][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2017.12.13-05.06.20:816][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.12.13-05.06.20:877][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2017.12.13-05.06.20:939][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2017.12.13-05.06.20:939][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2017.12.13-05.06.21:494][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: Loaded boot cache 0.08s 78MB C:/Users/Christopher Chen/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Christopher Chen/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.12.13-05.06.21:579][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.12.13-05.06.21:600][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.12.13-05.06.21:612][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Christopher Chen/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.12.13-05.06.21:626][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.12.13-05.06.21:627][  0]LogSlate: Using Freetype 2.6.0
-[2017.12.13-05.06.21:627][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.12.13-05.06.21:627][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.12.13-05.06.22:095][  0]LogInit: Selected Device Profile: [Windows]
-[2017.12.13-05.06.22:499][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.12.13-05.06.22:549][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.12.13-05.06.22:549][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.12.13-05.06.22:549][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2017.12.13-05.06.22:549][  0]LogMeshReduction: No automatic mesh merging module available
-[2017.12.13-05.06.22:549][  0]LogMeshMerging: No automatic mesh merging module available
-[2017.12.13-05.06.22:582][  0]LogNetVersion: MyProject3 , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3540592630)
-[2017.12.13-05.06.22:780][  0]LogAssetRegistry: FAssetRegistry took 0.0275 seconds to start up
-[2017.12.13-05.06.23:405][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.077373 seconds
-[2017.12.13-05.06.23:412][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
-[2017.12.13-05.06.23:412][  0]LogUObjectAllocator: 7372016 out of 0 bytes used by permanent object pool.
-[2017.12.13-05.06.23:412][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.12.13-05.06.23:478][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.12.13-05.06.26:744][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.12.13-05.06.26:791][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.12.13-05.06.26:792][  0]FUdpSocketBuilder: Failed to subscribe UdpMessageMulticastSocket to multicast group 230.0.0.1
-[2017.12.13-05.06.26:792][  0]FUdpSocketBuilder: Failed to create and initialize socket UdpMessageMulticastSocket (last error: 0)
-[2017.12.13-05.06.26:792][  0]LogUdpMessaging: Warning: StartTransport failed to create multicast socket on 0.0.0.0:0, joined to 230.0.0.1:6666 with TTL 1
-[2017.12.13-05.06.27:569][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.12.13-05.06.28:079][  0]SourceControl: Source control is disabled
-[2017.12.13-05.06.28:079][  0]SourceControl: Source control is disabled
-[2017.12.13-05.06.28:142][  0]SourceControl: Source control is disabled
-[2017.12.13-05.06.28:203][  0]SourceControl: Source control is disabled
-[2017.12.13-05.06.29:167][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.12.13-05.06.29:490][  0]LogOcInput: OculusInput pre-init called
-[2017.12.13-05.06.29:845][  0]LogEngine: Initializing Engine...
-[2017.12.13-05.06.29:848][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.12.13-05.06.30:104][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.12.13-05.06.30:104][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.12.13-05.06.30:258][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.12.13-05.06.30:266][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.13-05.06.30:279][  0]LogInit: FAudioDevice initialized.
-[2017.12.13-05.06.30:370][  0]LogDerivedDataCache: Saved boot cache 0.09s 78MB C:/Users/Christopher Chen/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.12.13-05.06.30:384][  0]LogInit: Texture streaming: Enabled
-[2017.12.13-05.06.30:500][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.12.13-05.06.30:654][  0]LogInit: Transaction tracking system initialized
-[2017.12.13-05.06.31:023][  0]BlueprintLog: New page: Editor Load
-[2017.12.13-05.06.32:071][  0]LocalizationService: Localization service is disabled
-[2017.12.13-05.06.32:946][  0]LogConsoleResponse: Display: 
-[2017.12.13-05.06.33:156][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.12.13-05.06.33:156][  0]LogCook: Display: Mobile HDR setting 1
-[2017.12.13-05.06.33:156][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2017.12.13-05.06.34:132][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/' took 0.02s
-[2017.12.13-05.06.34:572][  0]SourceControl: Source control is disabled
-[2017.12.13-05.06.34:572][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.12.13-05.06.34:573][  0]LightingResults: New page: Lighting Build
-[2017.12.13-05.06.34:622][  0]MapCheck: New page: Map Check
-[2017.12.13-05.06.34:622][  0]LightingResults: New page: Lighting Build
-[2017.12.13-05.06.35:345][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.12.13-05.06.35:412][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.12.13-05.06.35:443][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.12.13-05.06.35:512][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 68.011ms to complete.
-[2017.12.13-05.06.35:512][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.939
-[2017.12.13-05.06.35:665][  0]LogCollectionManager: Loaded 0 collections in 0.001951 seconds
-[2017.12.13-05.06.35:753][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Collections/' took 0.01s
-[2017.12.13-05.06.35:753][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Developers/ChristopherChen/Collections/' took 0.01s
-[2017.12.13-05.06.35:754][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Collections/' took 0.01s
-[2017.12.13-05.06.35:754][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2017.12.13-05.06.35:764][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2363 classes and 519 folders.
-[2017.12.13-05.06.35:842][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2017.12.13-05.06.35:885][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2017.12.13-05.06.35:939][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.12.13-05.06.36:030][  0]LogSlate: Took 0.000282 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.12.13-05.06.36:033][  0]LogSlate: Took 0.000315 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.12.13-05.06.36:041][  0]LogSlate: Took 0.000395 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.12.13-05.06.36:164][  0]LogRenderer: Reallocating scene render targets to support 804x436 Format 9 NumSamples 1 (Frame:1).
-[2017.12.13-05.06.36:241][  0]LogSlate: Took 0.000212 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.13-05.06.36:440][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2017.12.13-05.06.36:440][  0]LogLoad: (Engine Initialization) Total time: 22.15 seconds
-[2017.12.13-05.06.36:440][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2017.12.13-05.06.36:440][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.12.13-05.06.36:440][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.12.13-05.06.36:459][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.12.13-05.06.36:484][  0]LogContentStreaming: Texture pool size now 800 MB
-[2017.12.13-05.06.36:552][  1]LogAssetRegistry: Asset discovery search completed in 13.7934 seconds
-[2017.12.13-05.06.36:554][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2017.12.13-05.06.36:554][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000056 seconds (updated 0 objects)
-[2017.12.13-05.30.02:780][492]LogUProjectInfo: Found projects:
-[2017.12.13-05.31.45:729][662]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.13-05.31.47:572][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx)
-[2017.12.13-05.31.47:577][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx]
-[2017.12.13-05.31.47:591][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx
-[2017.12.13-05.31.47:597][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.47:598][662]LogFbx: Warning: Triangulating static mesh building_ArchWay
-[2017.12.13-05.31.47:606][662]LogStaticMesh: Building static mesh building_Archway...
-[2017.12.13-05.31.47:613][662]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/building_Archway.building_Archway
-[2017.12.13-05.31.47:613][662]LogStaticMesh: Warning: building_Archway has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.31.47:613][662]LogStaticMesh: Warning: building_Archway has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.31.47:620][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.47:623][662]FBXImport: Warning: building_Archway has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.31.47:623][662]FBXImport: Warning: building_Archway has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.31.47:629][662]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.13-05.31.47:639][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx)
-[2017.12.13-05.31.47:642][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx]
-[2017.12.13-05.31.47:652][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx
-[2017.12.13-05.31.47:658][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.47:659][662]LogFbx: Warning: Triangulating static mesh building_Floor1_GEO
-[2017.12.13-05.31.47:667][662]LogStaticMesh: Building static mesh building_Floor1...
-[2017.12.13-05.31.47:671][662]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/building_Floor1.building_Floor1
-[2017.12.13-05.31.47:671][662]LogStaticMesh: Warning: building_Floor1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.31.47:671][662]LogStaticMesh: Warning: building_Floor1 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.31.47:675][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.47:678][662]FBXImport: Warning: building_Floor1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.31.47:678][662]FBXImport: Warning: building_Floor1 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.31.47:692][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx)
-[2017.12.13-05.31.47:695][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx]
-[2017.12.13-05.31.47:707][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx
-[2017.12.13-05.31.47:715][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.47:719][662]LogFbx: Warning: Triangulating static mesh building_Floor2_GEO
-[2017.12.13-05.31.47:769][662]LogStaticMesh: Building static mesh building_Floor2...
-[2017.12.13-05.31.47:798][662]LogStaticMesh: Built static mesh [0.03s] /Game/Assets/building_Floor2.building_Floor2
-[2017.12.13-05.31.47:803][662]LogStaticMesh: Warning: building_Floor2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.31.47:803][662]LogStaticMesh: Warning: building_Floor2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.31.47:811][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.47:814][662]FBXImport: Warning: building_Floor2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.31.47:814][662]FBXImport: Warning: building_Floor2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.31.47:856][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx)
-[2017.12.13-05.31.47:859][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx]
-[2017.12.13-05.31.47:912][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx
-[2017.12.13-05.31.47:918][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.47:918][662]LogFbx: Warning: Triangulating static mesh building_roof_GEO
-[2017.12.13-05.31.47:919][662]LogStaticMesh: Building static mesh building_Roof...
-[2017.12.13-05.31.47:920][662]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/building_Roof.building_Roof
-[2017.12.13-05.31.47:924][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.48:081][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx)
-[2017.12.13-05.31.48:088][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx]
-[2017.12.13-05.31.48:168][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx
-[2017.12.13-05.31.48:271][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.31.48:274][662]LogFbx: 	Total Deformer Count -916724928.
-[2017.12.13-05.31.48:274][662]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:274][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:274][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.31.48:274][662]LogFbx: 	Total Deformer Count 99551624.
-[2017.12.13-05.31.48:274][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:274][662]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.31.48:274][662]LogFbx: 	Total Deformer Count 99551624.
-[2017.12.13-05.31.48:274][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:274][662]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.31.48:274][662]LogFbx: 	Total Deformer Count 99551624.
-[2017.12.13-05.31.48:274][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:274][662]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.31.48:274][662]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.31.48:274][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count 99551624.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -149537808.
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:275][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:275][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.31.48:275][662]LogFbx: =================================================
-[2017.12.13-05.31.48:275][662]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.31.48:275][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -149537808.
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.31.48:276][662]LogFbx: =================================================
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.31.48:276][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:276][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:276][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:276][662]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count -149537808.
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count -177407520.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 100255296.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:277][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:277][662]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.31.48:277][662]LogFbx: =================================================
-[2017.12.13-05.31.48:277][662]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.31.48:277][662]LogFbx: 	Total Deformer Count 100255296.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.31.48:278][662]LogFbx: =================================================
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.31.48:278][662]LogFbx: 	Total Deformer Count 100255296.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.31.48:278][662]LogFbx: =================================================
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.31.48:278][662]LogFbx: 	Total Deformer Count 100255296.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.31.48:278][662]LogFbx: =================================================
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.31.48:278][662]LogFbx: 	Total Deformer Count 100255296.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.31.48:278][662]LogFbx: =================================================
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.31.48:278][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.31.48:278][662]LogFbx: =================================================
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.31.48:278][662]LogFbx: 	Total Deformer Count 99551568.
-[2017.12.13-05.31.48:278][662]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.31.48:278][662]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.31.48:278][662]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.31.48:279][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1 : The relative matrices do not match
-[2017.12.13-05.31.48:279][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node pantsGeo : The relative matrices do not match
-[2017.12.13-05.31.48:280][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node shirtGeo : The relative matrices do not match
-[2017.12.13-05.31.48:280][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node l_shoe : The relative matrices do not match
-[2017.12.13-05.31.48:280][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node r_shoe : The relative matrices do not match
-[2017.12.13-05.31.48:280][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_shirtWrap : The relative matrices do not match
-[2017.12.13-05.31.48:281][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_pantsWrap : The relative matrices do not match
-[2017.12.13-05.31.48:281][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_lShoeWrap : The relative matrices do not match
-[2017.12.13-05.31.48:281][662]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_rShoeWrap : The relative matrices do not match
-[2017.12.13-05.31.48:281][662]LogFbx: Warning: Getting valid bind pose failed. Try to recreate bind pose
-[2017.12.13-05.31.48:282][662]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - humanBodyGeo1
-[2017.12.13-05.31.48:282][662]LogFbx: Warning: Recreating bind pose succeeded.
-[2017.12.13-05.31.48:293][662]LogFbx: Triangulating skeletal mesh humanBodyGeo1
-[2017.12.13-05.31.48:586][662]LogFbx: Triangulating skeletal mesh pantsGeo
-[2017.12.13-05.31.48:659][662]LogFbx: Triangulating skeletal mesh shirtGeo
-[2017.12.13-05.31.48:785][662]LogFbx: Triangulating skeletal mesh l_shoe
-[2017.12.13-05.31.48:790][662]LogFbx: Triangulating skeletal mesh r_shoe
-[2017.12.13-05.31.48:808][662]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_shirtWrap
-[2017.12.13-05.31.49:191][662]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_pantsWrap
-[2017.12.13-05.31.49:556][662]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_lShoeWrap
-[2017.12.13-05.31.49:919][662]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_rShoeWrap
-[2017.12.13-05.31.50:383][662]LogFbx: Warning: Bones digested - 50  Depth of hierarchy - 15
-[2017.12.13-05.31.55:422][662]LogSlate: Took 0.000179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.12.13-05.31.55:542][662]LogSkeletalMesh: Section 0: 45560 vertices, 30 active bones
-[2017.12.13-05.31.55:542][662]LogSkeletalMesh: Section 1: 2021 vertices, 1 active bones
-[2017.12.13-05.31.55:543][662]LogSkeletalMesh: Section 2: 3165 vertices, 1 active bones
-[2017.12.13-05.31.55:543][662]LogSkeletalMesh: Section 3: 384 vertices, 2 active bones
-[2017.12.13-05.31.55:661][662]LogSkeletalMesh: Section 0: Material=0, 82720 triangles
-[2017.12.13-05.31.55:661][662]LogSkeletalMesh: Section 1: Material=1, 3616 triangles
-[2017.12.13-05.31.55:661][662]LogSkeletalMesh: Section 2: Material=2, 5152 triangles
-[2017.12.13-05.31.55:661][662]LogSkeletalMesh: Section 3: Material=3, 428 triangles
-[2017.12.13-05.31.55:702][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.31.55:726][662]FBXImport: Warning: The following bones are missing from the bind pose:
-clothing_GEO  
-pantsGeo  
-shirtGeo  
-l_shoe  
-r_shoe  
-humanBodyGeo1Base_shirtWrap  
-humanBodyGeo1Base_pantsWrap  
-humanBodyGeo1Base_lShoeWrap  
-humanBodyGeo1Base_rShoeWrap  
-L_Toe_End  
-R_Toe_End  
-Head_End  
-L_Hand_End  
-R_Hand_End  
-L_Leg_IK  
-R_Leg_IK  
-L_Arm_IK  
-R_Arm_IK  
-Spine_IK  
-
-This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
-please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
-[2017.12.13-05.31.55:778][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx)
-[2017.12.13-05.31.55:781][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx]
-[2017.12.13-05.31.55:799][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx
-[2017.12.13-05.31.55:807][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.55:808][662]LogFbx: Warning: Triangulating static mesh hoe
-[2017.12.13-05.31.55:816][662]LogStaticMesh: Building static mesh tools_hoe...
-[2017.12.13-05.31.55:824][662]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/tools_hoe.tools_hoe
-[2017.12.13-05.31.55:829][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.55:853][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx)
-[2017.12.13-05.31.55:858][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx]
-[2017.12.13-05.31.55:881][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx
-[2017.12.13-05.31.55:890][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.55:891][662]LogFbx: Warning: Triangulating static mesh pitchFork
-[2017.12.13-05.31.55:903][662]LogStaticMesh: Building static mesh tools_pitchFork...
-[2017.12.13-05.31.55:920][662]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/tools_pitchFork.tools_pitchFork
-[2017.12.13-05.31.55:925][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.56:003][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx)
-[2017.12.13-05.31.56:006][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx]
-[2017.12.13-05.31.56:073][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx
-[2017.12.13-05.31.56:082][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.56:084][662]LogFbx: Warning: Triangulating static mesh rake
-[2017.12.13-05.31.56:106][662]LogStaticMesh: Building static mesh tools_rake...
-[2017.12.13-05.31.56:123][662]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/tools_rake.tools_rake
-[2017.12.13-05.31.56:126][662]LogStaticMesh: Warning: tools_rake has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.31.56:126][662]LogStaticMesh: Warning: tools_rake has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.31.56:133][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.56:136][662]FBXImport: Warning: tools_rake has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.31.56:136][662]FBXImport: Warning: tools_rake has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.31.56:274][662]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx)
-[2017.12.13-05.31.56:277][662]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx]
-[2017.12.13-05.31.56:386][662]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx
-[2017.12.13-05.31.56:393][662]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.31.56:394][662]LogFbx: Warning: Triangulating static mesh shovel
-[2017.12.13-05.31.56:400][662]LogStaticMesh: Building static mesh tools_shovel...
-[2017.12.13-05.31.56:407][662]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/tools_shovel.tools_shovel
-[2017.12.13-05.31.56:408][662]LogStaticMesh: Warning: tools_shovel has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.31.56:408][662]LogStaticMesh: Warning: tools_shovel has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.31.56:413][662]LogEditorFactories: -- imported successfully
-[2017.12.13-05.31.56:418][662]FBXImport: Warning: tools_shovel has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.31.56:418][662]FBXImport: Warning: tools_shovel has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.32.01:252][712]LogSavePackage: Save=1329.00ms
-[2017.12.13-05.32.01:252][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/FirstPersonExampleMap_Auto166B460054AFFA06DA3F555982B007771.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap'
-[2017.12.13-05.32.01:254][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap
-[2017.12.13-05.32.01:259][712]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.406
-[2017.12.13-05.32.01:259][712]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.406
-[2017.12.13-05.32.01:276][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/building_Archway] ([1] browsable assets)...
-[2017.12.13-05.32.01:308][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/building_Archway.building_Archway]
-[2017.12.13-05.32.01:308][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/building_Archway]
-[2017.12.13-05.32.01:338][712]LogSavePackage: Save=18.48ms
-[2017.12.13-05.32.01:338][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/building_Archway_Auto137E378CB45B016C766871B838620BEF7.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Archway_Auto1.uasset'
-[2017.12.13-05.32.01:342][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Archway_Auto1.uasset
-[2017.12.13-05.32.01:342][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/building_Floor1] ([1] browsable assets)...
-[2017.12.13-05.32.01:358][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/building_Floor1.building_Floor1]
-[2017.12.13-05.32.01:358][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/building_Floor1]
-[2017.12.13-05.32.01:387][712]LogSavePackage: Save=18.13ms
-[2017.12.13-05.32.01:387][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/building_Floor1_Auto1E3DDBCA8421CFBC1083CD7A2379A1B29.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Floor1_Auto1.uasset'
-[2017.12.13-05.32.01:389][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Floor1_Auto1.uasset
-[2017.12.13-05.32.01:389][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/building_Floor2] ([1] browsable assets)...
-[2017.12.13-05.32.01:406][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/building_Floor2.building_Floor2]
-[2017.12.13-05.32.01:406][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/building_Floor2]
-[2017.12.13-05.32.01:436][712]LogSavePackage: Save=18.62ms
-[2017.12.13-05.32.01:436][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/building_Floor2_Auto1DC117BC54F9302C9CCAD039F811C7568.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Floor2_Auto1.uasset'
-[2017.12.13-05.32.01:437][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Floor2_Auto1.uasset
-[2017.12.13-05.32.01:438][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/building_Roof] ([1] browsable assets)...
-[2017.12.13-05.32.01:454][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/building_Roof.building_Roof]
-[2017.12.13-05.32.01:454][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/building_Roof]
-[2017.12.13-05.32.01:485][712]LogSavePackage: Save=20.27ms
-[2017.12.13-05.32.01:485][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/building_Roof_Auto11AF9BAAF46643B3A473B7786AD762712.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Roof_Auto1.uasset'
-[2017.12.13-05.32.01:486][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/building_Roof_Auto1.uasset
-[2017.12.13-05.32.01:487][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/tools_hoe] ([1] browsable assets)...
-[2017.12.13-05.32.01:502][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/tools_hoe.tools_hoe]
-[2017.12.13-05.32.01:502][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/tools_hoe]
-[2017.12.13-05.32.01:531][712]LogSavePackage: Save=18.16ms
-[2017.12.13-05.32.01:531][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/tools_hoe_Auto1EC6EBD734626D018E4F51E9C80D5D9D5.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_hoe_Auto1.uasset'
-[2017.12.13-05.32.01:533][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_hoe_Auto1.uasset
-[2017.12.13-05.32.01:533][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/tools_pitchFork] ([1] browsable assets)...
-[2017.12.13-05.32.01:548][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/tools_pitchFork.tools_pitchFork]
-[2017.12.13-05.32.01:548][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/tools_pitchFork]
-[2017.12.13-05.32.01:577][712]LogSavePackage: Save=18.01ms
-[2017.12.13-05.32.01:577][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/tools_pitchFork_Auto1C062540046824B4C0F6A68BA8CBAFFD9.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_pitchFork_Auto1.uasset'
-[2017.12.13-05.32.01:579][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_pitchFork_Auto1.uasset
-[2017.12.13-05.32.01:579][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/simpleFarmer] ([1] browsable assets)...
-[2017.12.13-05.32.01:595][712]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/Assets/simpleFarmer.simpleFarmer]
-[2017.12.13-05.32.01:595][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/simpleFarmer]
-[2017.12.13-05.32.01:766][712]LogSavePackage: Save=153.60ms
-[2017.12.13-05.32.01:766][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/simpleFarmer_Auto1553100CD4B29EB381085918AADCCD93E.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/simpleFarmer_Auto1.uasset'
-[2017.12.13-05.32.01:767][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/simpleFarmer_Auto1.uasset
-[2017.12.13-05.32.01:768][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/tools_rake] ([1] browsable assets)...
-[2017.12.13-05.32.01:783][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/tools_rake.tools_rake]
-[2017.12.13-05.32.01:783][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/tools_rake]
-[2017.12.13-05.32.01:812][712]LogSavePackage: Save=18.41ms
-[2017.12.13-05.32.01:812][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/tools_rake_Auto1DE871C254761EA6AABFA47BE989D461B.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_rake_Auto1.uasset'
-[2017.12.13-05.32.01:814][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_rake_Auto1.uasset
-[2017.12.13-05.32.01:814][712]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/tools_shovel] ([1] browsable assets)...
-[2017.12.13-05.32.01:829][712]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/tools_shovel.tools_shovel]
-[2017.12.13-05.32.01:829][712]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/tools_shovel]
-[2017.12.13-05.32.01:861][712]LogSavePackage: Save=19.11ms
-[2017.12.13-05.32.01:861][712]LogSavePackage: Moving '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/tools_shovel_Auto1CA93A6094C9C7564639D1080777AEB59.tmp' to '../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_shovel_Auto1.uasset'
-[2017.12.13-05.32.01:863][712]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Saved/Autosaves/Game/Assets/tools_shovel_Auto1.uasset
-[2017.12.13-05.32.01:863][712]LogFileHelpers: Auto-saving content packages took 0.587
-[2017.12.13-05.32.37:859][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_big.fbx)
-[2017.12.13-05.32.37:863][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_big.fbx]
-[2017.12.13-05.32.37:881][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_big.fbx
-[2017.12.13-05.32.37:889][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.37:889][943]LogFbx: Warning: Triangulating static mesh bigBox
-[2017.12.13-05.32.37:892][943]LogStaticMesh: Building static mesh box_big...
-[2017.12.13-05.32.37:893][943]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/box_big.box_big
-[2017.12.13-05.32.37:899][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.37:920][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_small.fbx)
-[2017.12.13-05.32.37:923][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_small.fbx]
-[2017.12.13-05.32.37:936][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/box_small.fbx
-[2017.12.13-05.32.37:943][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.37:944][943]LogFbx: Warning: Triangulating static mesh smallBox
-[2017.12.13-05.32.37:945][943]LogStaticMesh: Building static mesh box_small...
-[2017.12.13-05.32.37:946][943]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/box_small.box_small
-[2017.12.13-05.32.37:951][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.37:970][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx)
-[2017.12.13-05.32.37:971][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx]
-[2017.12.13-05.32.37:985][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Archway.fbx
-[2017.12.13-05.32.37:993][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.37:994][943]LogFbx: Warning: Triangulating static mesh building_ArchWay
-[2017.12.13-05.32.38:003][943]LogStaticMesh: Building static mesh building_Archway...
-[2017.12.13-05.32.38:012][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/building_Archway.building_Archway
-[2017.12.13-05.32.38:013][943]LogStaticMesh: Warning: building_Archway has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.32.38:013][943]LogStaticMesh: Warning: building_Archway has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.32.38:017][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.38:021][943]FBXImport: Warning: building_Archway has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.32.38:021][943]FBXImport: Warning: building_Archway has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.32.38:036][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx)
-[2017.12.13-05.32.38:037][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx]
-[2017.12.13-05.32.38:052][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor1.fbx
-[2017.12.13-05.32.38:060][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.38:061][943]LogFbx: Warning: Triangulating static mesh building_Floor1_GEO
-[2017.12.13-05.32.38:070][943]LogStaticMesh: Building static mesh building_Floor1...
-[2017.12.13-05.32.38:075][943]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/building_Floor1.building_Floor1
-[2017.12.13-05.32.38:076][943]LogStaticMesh: Warning: building_Floor1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.32.38:076][943]LogStaticMesh: Warning: building_Floor1 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.32.38:080][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.38:084][943]FBXImport: Warning: building_Floor1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.32.38:084][943]FBXImport: Warning: building_Floor1 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.32.38:122][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx)
-[2017.12.13-05.32.38:123][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx]
-[2017.12.13-05.32.38:193][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Floor2.fbx
-[2017.12.13-05.32.38:203][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.38:208][943]LogFbx: Warning: Triangulating static mesh building_Floor2_GEO
-[2017.12.13-05.32.38:266][943]LogStaticMesh: Building static mesh building_Floor2...
-[2017.12.13-05.32.38:304][943]LogStaticMesh: Built static mesh [0.04s] /Game/Assets/building_Floor2.building_Floor2
-[2017.12.13-05.32.38:310][943]LogStaticMesh: Warning: building_Floor2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.32.38:310][943]LogStaticMesh: Warning: building_Floor2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.32.38:372][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.38:376][943]FBXImport: Warning: building_Floor2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.32.38:376][943]FBXImport: Warning: building_Floor2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.32.38:488][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx)
-[2017.12.13-05.32.38:489][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx]
-[2017.12.13-05.32.38:613][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/building_Roof.fbx
-[2017.12.13-05.32.38:620][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.38:621][943]LogFbx: Warning: Triangulating static mesh building_roof_GEO
-[2017.12.13-05.32.38:622][943]LogStaticMesh: Building static mesh building_Roof...
-[2017.12.13-05.32.38:623][943]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/building_Roof.building_Roof
-[2017.12.13-05.32.38:627][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.38:797][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/Grape_Sapling.fbx)
-[2017.12.13-05.32.38:807][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/Grape_Sapling.fbx]
-[2017.12.13-05.32.39:063][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/Grape_Sapling.fbx
-[2017.12.13-05.32.39:101][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.39:111][943]LogStaticMesh: Building static mesh Grape_Sapling...
-[2017.12.13-05.32.39:138][943]LogStaticMesh: Built static mesh [0.03s] /Game/Assets/Grape_Sapling.Grape_Sapling
-[2017.12.13-05.32.39:215][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.39:243][943]FBXImport: Warning: FBX Scene Loading: Found material name clash, name clash can be wrongly reassign at reimport , material 'Acer Leaf_Two_Sided' was rename 'Acer Leaf_Two_Sided_ncl1_1' 
-[2017.12.13-05.32.39:243][943]FBXImport: Warning: FBX Scene Loading: Found material name clash, name clash can be wrongly reassign at reimport , material 'Green' was rename 'Green_ncl1_1' 
-[2017.12.13-05.32.39:420][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/missile.fbx)
-[2017.12.13-05.32.39:423][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/missile.fbx]
-[2017.12.13-05.32.39:676][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/missile.fbx
-[2017.12.13-05.32.39:684][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.39:685][943]LogFbx: Warning: Triangulating static mesh missile_GEO
-[2017.12.13-05.32.39:692][943]LogStaticMesh: Building static mesh missile...
-[2017.12.13-05.32.39:700][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/missile.missile
-[2017.12.13-05.32.39:704][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.39:891][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_1.fbx)
-[2017.12.13-05.32.39:894][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_1.fbx]
-[2017.12.13-05.32.40:158][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_1.fbx
-[2017.12.13-05.32.40:165][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.40:167][943]LogFbx: Warning: Triangulating static mesh rock1_GEO
-[2017.12.13-05.32.40:172][943]LogStaticMesh: Building static mesh rock_1...
-[2017.12.13-05.32.40:176][943]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/rock_1.rock_1
-[2017.12.13-05.32.40:181][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.40:185][943]FBXImport: Warning: Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
-[2017.12.13-05.32.40:285][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_2.fbx)
-[2017.12.13-05.32.40:288][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_2.fbx]
-[2017.12.13-05.32.40:574][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_2.fbx
-[2017.12.13-05.32.40:582][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.40:583][943]LogFbx: Warning: Triangulating static mesh rock2_GEO
-[2017.12.13-05.32.40:594][943]LogStaticMesh: Building static mesh rock_2...
-[2017.12.13-05.32.40:600][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_2.rock_2
-[2017.12.13-05.32.40:608][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.40:789][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_3.fbx)
-[2017.12.13-05.32.40:792][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_3.fbx]
-[2017.12.13-05.32.41:070][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/rock_3.fbx
-[2017.12.13-05.32.41:080][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.41:082][943]LogFbx: Warning: Triangulating static mesh rock3_GEO
-[2017.12.13-05.32.41:101][943]LogStaticMesh: Building static mesh rock_3...
-[2017.12.13-05.32.41:110][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_3.rock_3
-[2017.12.13-05.32.41:120][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.41:364][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx)
-[2017.12.13-05.32.41:369][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx]
-[2017.12.13-05.32.41:577][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/simpleFarmer.fbx
-[2017.12.13-05.32.41:724][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -2063097344.
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -254511128.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -254511128.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -254511128.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -254511128.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.32.41:728][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:728][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:728][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.32.41:728][943]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.32.41:728][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -2063097344.
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:729][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.32.41:729][943]LogFbx: =================================================
-[2017.12.13-05.32.41:729][943]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.32.41:729][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:729][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -2063097344.
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.32.41:730][943]LogFbx: =================================================
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.32.41:730][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:730][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:730][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.32.41:730][943]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -2063097344.
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node 1]  (Type Skin).
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1 (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [humanBodyGeo1]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.32.41:731][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:731][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:731][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.32.41:731][943]LogFbx: =================================================
-[2017.12.13-05.32.41:731][943]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [pantsGeo] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] pantsGeo (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [pantsGeo]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [shirtGeo] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] shirtGeo (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [shirtGeo]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_shirtWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_shirtWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_shirtWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_pantsWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_pantsWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_pantsWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_lShoeWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_lShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_lShoeWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [humanBodyGeo1Base_rShoeWrap] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -1287928480.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] humanBodyGeo1Base_rShoeWrap (Type Mesh).
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node END [humanBodyGeo1Base_rShoeWrap]
-[2017.12.13-05.32.41:732][943]LogFbx: =================================================
-[2017.12.13-05.32.41:732][943]LogFbx: Dumping Node START [l_shoe] 
-[2017.12.13-05.32.41:732][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:732][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:732][943]LogFbx: 		[Node Attribute Child 1] l_shoe (Type Mesh).
-[2017.12.13-05.32.41:733][943]LogFbx: Dumping Node END [l_shoe]
-[2017.12.13-05.32.41:733][943]LogFbx: =================================================
-[2017.12.13-05.32.41:733][943]LogFbx: Dumping Node START [r_shoe] 
-[2017.12.13-05.32.41:733][943]LogFbx: 	Total Deformer Count -254512864.
-[2017.12.13-05.32.41:733][943]LogFbx: 	Attribute () Type (4).
-[2017.12.13-05.32.41:733][943]LogFbx: 		[Node Attribute Child 1] r_shoe (Type Mesh).
-[2017.12.13-05.32.41:733][943]LogFbx: Dumping Node END [r_shoe]
-[2017.12.13-05.32.41:734][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1 : The relative matrices do not match
-[2017.12.13-05.32.41:735][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node pantsGeo : The relative matrices do not match
-[2017.12.13-05.32.41:735][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node shirtGeo : The relative matrices do not match
-[2017.12.13-05.32.41:735][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node l_shoe : The relative matrices do not match
-[2017.12.13-05.32.41:736][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node r_shoe : The relative matrices do not match
-[2017.12.13-05.32.41:736][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_shirtWrap : The relative matrices do not match
-[2017.12.13-05.32.41:736][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_pantsWrap : The relative matrices do not match
-[2017.12.13-05.32.41:737][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_lShoeWrap : The relative matrices do not match
-[2017.12.13-05.32.41:737][943]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node humanBodyGeo1Base_rShoeWrap : The relative matrices do not match
-[2017.12.13-05.32.41:737][943]LogFbx: Warning: Getting valid bind pose failed. Try to recreate bind pose
-[2017.12.13-05.32.41:738][943]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - humanBodyGeo1
-[2017.12.13-05.32.41:738][943]LogFbx: Warning: Recreating bind pose succeeded.
-[2017.12.13-05.32.41:752][943]LogFbx: Triangulating skeletal mesh humanBodyGeo1
-[2017.12.13-05.32.42:138][943]LogFbx: Triangulating skeletal mesh pantsGeo
-[2017.12.13-05.32.42:225][943]LogFbx: Triangulating skeletal mesh shirtGeo
-[2017.12.13-05.32.42:345][943]LogFbx: Triangulating skeletal mesh l_shoe
-[2017.12.13-05.32.42:351][943]LogFbx: Triangulating skeletal mesh r_shoe
-[2017.12.13-05.32.42:369][943]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_shirtWrap
-[2017.12.13-05.32.42:763][943]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_pantsWrap
-[2017.12.13-05.32.43:159][943]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_lShoeWrap
-[2017.12.13-05.32.43:536][943]LogFbx: Triangulating skeletal mesh humanBodyGeo1Base_rShoeWrap
-[2017.12.13-05.32.44:019][943]LogFbx: Warning: Bones digested - 50  Depth of hierarchy - 15
-[2017.12.13-05.32.49:165][943]LogSkeletalMesh: Section 0: 45560 vertices, 30 active bones
-[2017.12.13-05.32.49:166][943]LogSkeletalMesh: Section 1: 2021 vertices, 1 active bones
-[2017.12.13-05.32.49:166][943]LogSkeletalMesh: Section 2: 3165 vertices, 1 active bones
-[2017.12.13-05.32.49:166][943]LogSkeletalMesh: Section 3: 384 vertices, 2 active bones
-[2017.12.13-05.32.49:285][943]LogSkeletalMesh: Section 0: Material=0, 82720 triangles
-[2017.12.13-05.32.49:285][943]LogSkeletalMesh: Section 1: Material=1, 3616 triangles
-[2017.12.13-05.32.49:285][943]LogSkeletalMesh: Section 2: Material=2, 5152 triangles
-[2017.12.13-05.32.49:285][943]LogSkeletalMesh: Section 3: Material=3, 428 triangles
-[2017.12.13-05.32.49:325][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
-[2017.12.13-05.32.49:349][943]FBXImport: Warning: The following bones are missing from the bind pose:
-clothing_GEO  
-pantsGeo  
-shirtGeo  
-l_shoe  
-r_shoe  
-humanBodyGeo1Base_shirtWrap  
-humanBodyGeo1Base_pantsWrap  
-humanBodyGeo1Base_lShoeWrap  
-humanBodyGeo1Base_rShoeWrap  
-L_Toe_End  
-R_Toe_End  
-Head_End  
-L_Hand_End  
-R_Hand_End  
-L_Leg_IK  
-R_Leg_IK  
-L_Arm_IK  
-R_Arm_IK  
-Spine_IK  
-
-This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
-please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
-[2017.12.13-05.32.49:401][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx)
-[2017.12.13-05.32.49:402][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx]
-[2017.12.13-05.32.49:422][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_hoe.fbx
-[2017.12.13-05.32.49:430][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.49:431][943]LogFbx: Warning: Triangulating static mesh hoe
-[2017.12.13-05.32.49:439][943]LogStaticMesh: Building static mesh tools_hoe...
-[2017.12.13-05.32.49:447][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/tools_hoe.tools_hoe
-[2017.12.13-05.32.49:453][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.49:473][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx)
-[2017.12.13-05.32.49:475][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx]
-[2017.12.13-05.32.49:490][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_pitchFork.fbx
-[2017.12.13-05.32.49:498][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.49:499][943]LogFbx: Warning: Triangulating static mesh pitchFork
-[2017.12.13-05.32.49:511][943]LogStaticMesh: Building static mesh tools_pitchFork...
-[2017.12.13-05.32.49:527][943]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/tools_pitchFork.tools_pitchFork
-[2017.12.13-05.32.49:533][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.49:574][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx)
-[2017.12.13-05.32.49:575][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx]
-[2017.12.13-05.32.49:624][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_rake.fbx
-[2017.12.13-05.32.49:633][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.49:635][943]LogFbx: Warning: Triangulating static mesh rake
-[2017.12.13-05.32.49:656][943]LogStaticMesh: Building static mesh tools_rake...
-[2017.12.13-05.32.49:673][943]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/tools_rake.tools_rake
-[2017.12.13-05.32.49:675][943]LogStaticMesh: Warning: tools_rake has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.32.49:675][943]LogStaticMesh: Warning: tools_rake has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.32.49:682][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.49:686][943]FBXImport: Warning: tools_rake has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.32.49:686][943]FBXImport: Warning: tools_rake has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.13-05.32.49:772][943]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx)
-[2017.12.13-05.32.49:773][943]LogEditorFactories: Performing atomic reimport of [C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx]
-[2017.12.13-05.32.49:863][943]LogFbx: Loading FBX Scene from C:/Users/Christopher Chen/Documents/Unreal Projects/MyProject3 old/Content/Assets/tools_shovel.fbx
-[2017.12.13-05.32.49:871][943]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.13-05.32.49:872][943]LogFbx: Warning: Triangulating static mesh shovel
-[2017.12.13-05.32.49:878][943]LogStaticMesh: Building static mesh tools_shovel...
-[2017.12.13-05.32.49:884][943]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/tools_shovel.tools_shovel
-[2017.12.13-05.32.49:885][943]LogStaticMesh: Warning: tools_shovel has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.13-05.32.49:885][943]LogStaticMesh: Warning: tools_shovel has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.13-05.32.49:889][943]LogEditorFactories: -- imported successfully
-[2017.12.13-05.32.49:894][943]FBXImport: Warning: tools_shovel has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.13-05.32.49:894][943]FBXImport: Warning: tools_shovel has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2017.12.13-06.01.42:693][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.13-06.01.42:693][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.12.13-06.01.42:928][  0]LogInit: Computer: DTLAW-UB
+[2017.12.13-06.01.42:928][  0]LogInit: User: dtlaw
+[2017.12.13-06.01.42:928][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.12.13-06.01.42:928][  0]LogInit: High frequency timer resolution =2.338333 MHz
+[2017.12.13-06.01.42:928][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.12.13-06.01.42:928][  0]LogMemory: Platform Memory Stats for Windows
+[2017.12.13-06.01.42:928][  0]LogMemory: Process Physical Memory: 271.18 MB used, 271.18 MB peak
+[2017.12.13-06.01.42:928][  0]LogMemory: Process Virtual Memory: 269.47 MB used, 269.47 MB peak
+[2017.12.13-06.01.42:928][  0]LogMemory: Physical Memory: 5710.09 MB used,  2397.46 MB free, 8107.55 MB total
+[2017.12.13-06.01.42:928][  0]LogMemory: Virtual Memory: 640.11 MB used,  2397.46 MB free, 134217728.00 MB total
+[2017.12.13-06.01.43:985][  0]LogInit: Using OS detected language (en-US).
+[2017.12.13-06.01.43:985][  0]LogInit: Using OS detected locale (en-US).
+[2017.12.13-06.01.44:191][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.12.13-06.01.45:291][  0]LogInit: Setting process to per monitor DPI aware
+[2017.12.13-06.01.51:655][  0]LogD3D11RHI: D3D11 adapters:
+[2017.12.13-06.01.51:708][  0]LogD3D11RHI:    0. 'NVIDIA GeForce 840M' (Feature Level 11_0)
+[2017.12.13-06.01.51:708][  0]LogD3D11RHI:       2019/0/4053 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.12.13-06.01.51:717][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics Family' (Feature Level 11_0)
+[2017.12.13-06.01.51:717][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.12.13-06.01.51:720][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.12.13-06.01.51:720][  0]LogD3D11RHI:       0/0/4053 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.12.13-06.01.51:720][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.12.13-06.01.51:736][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.12.13-06.01.51:736][  0]LogD3D11RHI:     GPU DeviceId: 0x1341 (for the marketing name, search the web for "GPU Device Id")
+[2017.12.13-06.01.51:736][  0]LogWindows: EnumDisplayDevices:
+[2017.12.13-06.01.51:737][  0]LogWindows:    0. 'Intel(R) HD Graphics Family' (P:1 D:1)
+[2017.12.13-06.01.51:737][  0]LogWindows:    1. 'Intel(R) HD Graphics Family' (P:0 D:0)
+[2017.12.13-06.01.51:737][  0]LogWindows:    2. 'Intel(R) HD Graphics Family' (P:0 D:0)
+[2017.12.13-06.01.51:738][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.12.13-06.01.51:738][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce 840M
+[2017.12.13-06.01.51:738][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.12.13-06.01.51:738][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.12.13-06.01.51:738][  0]LogRHI: Texture pool is 1413 MB (70% of 2019 MB)
+[2017.12.13-06.01.51:763][  0]LogD3D11RHI: Async texture creation enabled
+[2017.12.13-06.01.51:778][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.12.13-06.01.51:779][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Intermediate/Shaders/WorkingDirectory/22568/).
+[2017.12.13-06.01.51:779][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/dtlaw/AppData/Local/Temp/UnrealShaderWorkingDir/651AC9DF4945B5ABFC1C49941D2E5412/'.
+[2017.12.13-06.01.51:780][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.12.13-06.01.54:503][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.12.13-06.01.54:616][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.12.13-06.01.54:732][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.12.13-06.01.54:855][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.12.13-06.01.54:978][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.12.13-06.01.55:093][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.12.13-06.01.55:209][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.12.13-06.01.55:329][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.12.13-06.01.55:431][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.12.13-06.01.55:546][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.12.13-06.01.55:655][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.12.13-06.01.55:773][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.12.13-06.01.55:904][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.12.13-06.01.56:013][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.12.13-06.01.56:244][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.12.13-06.01.56:244][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.12.13-06.01.56:363][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.12.13-06.01.56:465][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.12.13-06.01.56:678][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.12.13-06.01.56:747][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.12.13-06.01.56:894][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.12.13-06.01.57:035][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.12.13-06.01.57:156][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.12.13-06.01.57:284][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.12.13-06.01.57:284][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.12.13-06.01.58:481][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: Loaded boot cache 0.14s 78MB C:/Users/dtlaw/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/dtlaw/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.12.13-06.01.58:621][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.12.13-06.01.58:650][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.12.13-06.01.58:663][  0]LogDerivedDataCache: Using Local data cache path C:/Users/dtlaw/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.12.13-06.01.58:679][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.12.13-06.01.58:680][  0]LogSlate: Using Freetype 2.6.0
+[2017.12.13-06.01.58:680][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.13-06.01.58:680][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.13-06.01.59:956][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.13-06.02.00:708][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.12.13-06.02.00:816][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.12.13-06.02.00:816][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.12.13-06.02.00:816][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.12.13-06.02.00:816][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.12.13-06.02.00:816][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.12.13-06.02.00:870][  0]LogNetVersion: MyProject3 , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3540592630)
+[2017.12.13-06.02.01:171][  0]LogAssetRegistry: FAssetRegistry took 0.0287 seconds to start up
+[2017.12.13-06.02.02:179][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.119277 seconds
+[2017.12.13-06.02.02:188][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
+[2017.12.13-06.02.02:188][  0]LogUObjectAllocator: 7372024 out of 0 bytes used by permanent object pool.
+[2017.12.13-06.02.02:188][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.12.13-06.02.02:344][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.12.13-06.02.30:216][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.12.13-06.02.30:292][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.12.13-06.02.31:855][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.12.13-06.02.32:819][  0]SourceControl: Source control is disabled
+[2017.12.13-06.02.32:820][  0]SourceControl: Source control is disabled
+[2017.12.13-06.02.32:950][  0]SourceControl: Source control is disabled
+[2017.12.13-06.02.33:069][  0]SourceControl: Source control is disabled
+[2017.12.13-06.02.34:989][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.12.13-06.02.35:602][  0]LogOcInput: OculusInput pre-init called
+[2017.12.13-06.02.36:270][  0]LogEngine: Initializing Engine...
+[2017.12.13-06.02.36:274][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.12.13-06.02.36:665][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.12.13-06.02.36:665][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.12.13-06.02.37:038][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.12.13-06.02.37:066][  0]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.12.13-06.02.37:087][  0]LogInit: FAudioDevice initialized.
+[2017.12.13-06.02.38:260][  0]LogDerivedDataCache: Saved boot cache 1.17s 78MB C:/Users/dtlaw/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.12.13-06.02.38:285][  0]LogInit: Texture streaming: Enabled
+[2017.12.13-06.02.38:554][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.12.13-06.02.38:900][  0]LogInit: Transaction tracking system initialized
+[2017.12.13-06.02.39:701][  0]BlueprintLog: New page: Editor Load
+[2017.12.13-06.02.42:429][  0]LocalizationService: Localization service is disabled
+[2017.12.13-06.02.44:459][  0]LogConsoleResponse: Display: 
+[2017.12.13-06.02.44:968][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.12.13-06.02.44:968][  0]LogCook: Display: Mobile HDR setting 1
+[2017.12.13-06.02.44:968][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.12.13-06.02.46:133][  0]LogFileCache: Scanning file cache for directory 'C:/Users/dtlaw/Documents/GameDev/ue4project/Content/' took 0.82s
+[2017.12.13-06.02.47:771][  0]SourceControl: Source control is disabled
+[2017.12.13-06.02.48:413][  0]LogSlate: Took 0.000306 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.13-06.02.57:364][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.13-06.02.57:364][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.13-06.02.57:382][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.13-06.02.57:382][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.13-06.02.57:384][  0]Cmd: MAP LOAD FILE="../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.12.13-06.02.57:667][  0]LightingResults: New page: Lighting Build
+[2017.12.13-06.02.57:791][  0]MapCheck: New page: Map Check
+[2017.12.13-06.02.57:791][  0]LightingResults: New page: Lighting Build
+[2017.12.13-06.03.07:787][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha (BGRA8, 1024X1365)
+[2017.12.13-06.03.08:881][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM (BGRA8, 1024X1365)
+[2017.12.13-06.03.08:881][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_G_mapleLeaf_alpha (BGRA8, 1024X1365)
+[2017.12.13-06.03.08:952][  0]LogStaticMesh: Building static mesh box_big...
+[2017.12.13-06.03.09:588][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_frontMapleLeaf_NRM (BGRA8, 1024X1365)
+[2017.12.13-06.03.09:588][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_back_backMapleLeaf (BGRA8, 1024X1365)
+[2017.12.13-06.03.09:588][  0]LogStaticMesh: Built static mesh [0.64s] /Game/Assets/box_big.box_big
+[2017.12.13-06.03.10:515][  0]LogTexture: Display: Building textures: Acer_Leaf_Two_Sided_frontMapleLeaf (BGRA8, 1024X1365)
+[2017.12.13-06.03.10:515][  0]LogStaticMesh: Building static mesh box_small...
+[2017.12.13-06.03.10:517][  0]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/box_small.box_small
+[2017.12.13-06.03.10:585][  0]LogStaticMesh: Building static mesh building_Archway...
+[2017.12.13-06.03.10:601][  0]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/building_Archway.building_Archway
+[2017.12.13-06.03.10:605][  0]LogStaticMesh: Building static mesh building_Floor1...
+[2017.12.13-06.03.10:614][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/building_Floor1.building_Floor1
+[2017.12.13-06.03.10:664][  0]LogStaticMesh: Building static mesh building_Floor2...
+[2017.12.13-06.03.10:713][  0]LogStaticMesh: Built static mesh [0.10s] /Game/Assets/building_Floor2.building_Floor2
+[2017.12.13-06.03.10:721][  0]LogStaticMesh: Building static mesh building_Roof...
+[2017.12.13-06.03.10:724][  0]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/building_Roof.building_Roof
+[2017.12.13-06.03.10:728][  0]LogStaticMesh: Building static mesh Grape_Sapling...
+[2017.12.13-06.03.10:768][  0]LogStaticMesh: Built static mesh [0.04s] /Game/Assets/Grape_Sapling.Grape_Sapling
+[2017.12.13-06.03.10:775][  0]LogStaticMesh: Building static mesh rock_2...
+[2017.12.13-06.03.10:784][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_2.rock_2
+[2017.12.13-06.03.10:787][  0]LogStaticMesh: Building static mesh rock_3...
+[2017.12.13-06.03.10:795][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_3.rock_3
+[2017.12.13-06.03.10:836][  0]LogStaticMesh: Building static mesh rock_1...
+[2017.12.13-06.03.10:845][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_1.rock_1
+[2017.12.13-06.03.10:851][  0]LogStaticMesh: Building static mesh tools_hoe...
+[2017.12.13-06.03.10:863][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/tools_hoe.tools_hoe
+[2017.12.13-06.03.10:865][  0]LogStaticMesh: Building static mesh tools_pitchFork...
+[2017.12.13-06.03.10:890][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Assets/tools_pitchFork.tools_pitchFork
+[2017.12.13-06.03.11:766][  0]LogMaterial: Missing cached shader map for material Green_ncl1_1, compiling. 
+[2017.12.13-06.03.12:770][  0]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 2048X2048)
+[2017.12.13-06.03.12:777][  0]LogMaterial: Missing cached shader map for material Green, compiling. 
+[2017.12.13-06.03.12:905][  0]LogMaterial: Missing cached shader map for material Acer_Leaf_Two_Sided_ncl1_1, compiling. 
+[2017.12.13-06.03.13:154][  0]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 1024X1024)
+[2017.12.13-06.03.13:154][  0]LogMaterial: Missing cached shader map for material Acer_Leaf_Two_Sided, compiling. 
+[2017.12.13-06.03.13:325][  0]LogMaterial: Missing cached shader map for material blinn2, compiling. 
+[2017.12.13-06.03.21:344][  0]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
+[2017.12.13-06.03.21:344][  0]LogTexture: Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 64X64)
+[2017.12.13-06.03.26:023][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 2048X2048)
+[2017.12.13-06.03.26:023][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 1024X1024)
+[2017.12.13-06.03.26:023][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
+[2017.12.13-06.03.27:377][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_4 (DXT1, 64X64)
+[2017.12.13-06.03.27:377][  0]LogTexture: Display: Building textures: SkyOcclusion0_1 (AutoDXT, 2048X1024)
+[2017.12.13-06.03.30:315][  0]LogTexture: Display: Building textures: SkyOcclusion0_2 (AutoDXT, 1024X512)
+[2017.12.13-06.03.30:315][  0]LogTexture: Display: Building textures: SkyOcclusion0_3 (AutoDXT, 1024X512)
+[2017.12.13-06.03.30:778][  0]LogTexture: Display: Building textures: SkyOcclusion0_4 (AutoDXT, 64X32)
+[2017.12.13-06.03.30:778][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_12 (G8, 1024X1024)
+[2017.12.13-06.03.30:778][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_11 (G8, 1024X1024)
+[2017.12.13-06.03.30:778][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_14 (G8, 32X32)
+[2017.12.13-06.03.30:778][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_13 (G8, 1024X1024)
+[2017.12.13-06.03.30:778][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.12.13-06.03.31:383][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.12.13-06.03.31:524][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.12.13-06.03.31:681][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 157.211ms to complete.
+[2017.12.13-06.03.31:682][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 34.298
+[2017.12.13-06.03.38:906][  0]LogStats: Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_41dc_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_5a88_0///####STATCAT_Advanced####
+[2017.12.13-06.03.38:906][  0]LogCollectionManager: Loaded 0 collections in 0.003196 seconds
+[2017.12.13-06.03.41:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/dtlaw/Documents/GameDev/ue4project/Saved/Collections/' took 0.01s
+[2017.12.13-06.03.41:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Developers/dtlaw/Collections/' took 0.01s
+[2017.12.13-06.03.41:272][  0]LogFileCache: Scanning file cache for directory 'C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Collections/' took 0.01s
+[2017.12.13-06.03.41:273][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2017.12.13-06.03.41:425][  0]LogContentBrowser: Native class hierarchy populated in 0.1354 seconds. Added 2364 classes and 521 folders.
+[2017.12.13-06.03.42:213][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.12.13-06.03.55:109][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.12.13-06.04.00:626][  0]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.12.13-06.04.00:798][  0]LogSlate: Took 0.038548 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.12.13-06.04.02:111][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2017.12.13-06.04.04:973][  0]LogSlate: Took 0.041039 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.13-06.04.10:545][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.12.13-06.04.10:545][  0]LogLoad: (Engine Initialization) Total time: 187.08 seconds
+[2017.12.13-06.04.10:545][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.12.13-06.04.10:545][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.12.13-06.04.10:545][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.12.13-06.04.11:557][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.12.13-06.04.13:673][  4]LogAssetRegistry: Asset discovery search completed in 132.5241 seconds
+[2017.12.13-06.04.13:678][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.12.13-06.04.13:678][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000125 seconds (updated 0 objects)
+[2017.12.13-06.04.13:876][  5]LogSlate: Took 0.000290 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.13-06.04.17:730][176]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/dtlaw/Documents/GameDev/ue4project/Content/' took 7.09s
+[2017.12.13-06.04.22:566][443]AssetReimport: New page: Outstanding source content changes 8:04:22 PM
+[2017.12.13-06.04.25:798][444]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_big.fbx]
+[2017.12.13-06.04.27:963][444]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_big.fbx
+[2017.12.13-06.04.28:120][444]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.28:360][444]LogStaticMesh: Building static mesh box_big...
+[2017.12.13-06.04.28:362][444]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/box_big.box_big
+[2017.12.13-06.04.28:490][444]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.28:577][445]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_small.fbx]
+[2017.12.13-06.04.28:590][445]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_small.fbx
+[2017.12.13-06.04.28:599][445]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.28:620][445]LogStaticMesh: Building static mesh box_small...
+[2017.12.13-06.04.28:621][445]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/box_small.box_small
+[2017.12.13-06.04.28:651][445]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.28:719][446]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbx]
+[2017.12.13-06.04.28:763][446]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbx
+[2017.12.13-06.04.28:818][446]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.28:828][446]LogStaticMesh: Building static mesh Grape_Sapling...
+[2017.12.13-06.04.28:865][446]LogStaticMesh: Built static mesh [0.04s] /Game/Assets/Grape_Sapling.Grape_Sapling
+[2017.12.13-06.04.28:916][446]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.29:029][447]LogStaticMesh: Building static mesh missile...
+[2017.12.13-06.04.29:043][447]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/missile.missile
+[2017.12.13-06.04.29:049][447]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/missile.fbx]
+[2017.12.13-06.04.29:060][447]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/missile.fbx
+[2017.12.13-06.04.29:072][447]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.29:082][447]LogStaticMesh: Building static mesh missile...
+[2017.12.13-06.04.29:094][447]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/missile.missile
+[2017.12.13-06.04.29:101][447]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.29:185][448]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_1.fbx]
+[2017.12.13-06.04.29:202][448]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_1.fbx
+[2017.12.13-06.04.29:213][448]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.29:261][448]LogStaticMesh: Building static mesh rock_1...
+[2017.12.13-06.04.29:266][448]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_1.rock_1
+[2017.12.13-06.04.29:295][448]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.29:348][449]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_2.fbx]
+[2017.12.13-06.04.29:359][449]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_2.fbx
+[2017.12.13-06.04.29:370][449]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.29:385][449]LogStaticMesh: Building static mesh rock_2...
+[2017.12.13-06.04.29:394][449]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/rock_2.rock_2
+[2017.12.13-06.04.29:401][449]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.29:447][450]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_3.fbx]
+[2017.12.13-06.04.29:460][450]LogFbx: Loading FBX Scene from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_3.fbx
+[2017.12.13-06.04.29:470][450]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.13-06.04.29:488][450]LogStaticMesh: Building static mesh rock_3...
+[2017.12.13-06.04.29:542][450]LogStaticMesh: Built static mesh [0.05s] /Game/Assets/rock_3.rock_3
+[2017.12.13-06.04.29:593][450]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.29:776][451]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.png)
+[2017.12.13-06.04.30:432][452]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.png)
+[2017.12.13-06.04.30:784][453]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.png)
+[2017.12.13-06.04.31:103][454]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.png)
+[2017.12.13-06.04.31:539][455]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.png)
+[2017.12.13-06.04.31:892][456]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.png)
+[2017.12.13-06.04.34:081][457]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.png]
+[2017.12.13-06.04.34:092][457]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.png)
+[2017.12.13-06.04.34:557][457]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.34:840][458]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.png]
+[2017.12.13-06.04.34:850][458]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.png)
+[2017.12.13-06.04.35:150][458]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.35:410][459]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.png]
+[2017.12.13-06.04.35:411][459]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.png)
+[2017.12.13-06.04.35:760][459]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.38:649][460]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.png]
+[2017.12.13-06.04.38:661][460]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.png)
+[2017.12.13-06.04.39:149][460]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.39:488][461]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.png]
+[2017.12.13-06.04.39:494][461]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.png)
+[2017.12.13-06.04.39:860][461]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.40:183][462]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.png]
+[2017.12.13-06.04.40:184][462]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.png)
+[2017.12.13-06.04.40:493][462]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.42:976][463]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.png]
+[2017.12.13-06.04.42:983][463]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.png)
+[2017.12.13-06.04.45:237][463]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.48:696][464]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.png]
+[2017.12.13-06.04.48:707][464]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.png)
+[2017.12.13-06.04.50:137][464]LogEditorFactories: -- imported successfully
+[2017.12.13-06.04.55:311][465]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.png]
+[2017.12.13-06.04.55:325][465]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.png)
+[2017.12.13-06.04.59:906][465]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.03:552][466]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_BaseColor.png]
+[2017.12.13-06.05.03:555][466]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_BaseColor.png)
+[2017.12.13-06.05.05:993][466]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.06:742][467]LogSlate: Took 0.000293 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.13-06.05.09:919][467]LogSlate: Took 0.000297 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.13-06.05.10:014][467]LogSavePackage: Save=2880.29ms
+[2017.12.13-06.05.10:014][467]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/FirstPersonExampleMap53FDC45B4BAB9530623083BC1C94CF10.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2017.12.13-06.05.10:027][467]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2017.12.13-06.05.14:723][467]LogSavePackage: Save=4317.38ms
+[2017.12.13-06.05.14:723][467]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/FirstPersonExampleMap_BuiltDataFE231D6B4C7C765C52F3DF816EF291F4.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2017.12.13-06.05.14:730][467]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2017.12.13-06.05.16:072][467]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_Normal.png]
+[2017.12.13-06.05.16:075][467]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_Normal.png)
+[2017.12.13-06.05.17:440][467]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.19:285][468]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_OcclusionRoughnessMetallic.png]
+[2017.12.13-06.05.19:286][468]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_OcclusionRoughnessMetallic.png)
+[2017.12.13-06.05.20:941][468]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.36:072][469]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.png]
+[2017.12.13-06.05.36:108][469]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.png)
+[2017.12.13-06.05.46:404][469]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.48:474][470]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.png]
+[2017.12.13-06.05.48:505][470]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.png)
+[2017.12.13-06.05.50:316][470]LogEditorFactories: -- imported successfully
+[2017.12.13-06.05.55:685][471]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.png]
+[2017.12.13-06.05.55:699][471]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.png)
+[2017.12.13-06.06.00:168][471]LogEditorFactories: -- imported successfully
+[2017.12.13-06.06.03:421][472]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_BaseColor.png]
+[2017.12.13-06.06.03:425][472]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_BaseColor.png)
+[2017.12.13-06.06.05:459][472]LogEditorFactories: -- imported successfully
+[2017.12.13-06.06.06:881][473]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_Normal.png]
+[2017.12.13-06.06.06:887][473]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_Normal.png)
+[2017.12.13-06.06.08:165][473]LogEditorFactories: -- imported successfully
+[2017.12.13-06.06.10:768][474]LogEditorFactories: Performing atomic reimport of [C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_OcclusionRoughnessMetallic.png]
+[2017.12.13-06.06.10:772][474]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_OcclusionRoughnessMetallic.png)
+[2017.12.13-06.06.12:525][474]LogEditorFactories: -- imported successfully
+[2017.12.13-06.06.12:589][475]LogSlate: Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.12.13-06.06.13:247][475]LogSavePackage: Save=537.89ms
+[2017.12.13-06.06.13:247][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_backMap604F203748AC3D101053568B0F70AA30.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.uasset'
+[2017.12.13-06.06.13:254][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.uasset
+[2017.12.13-06.06.13:539][475]LogSavePackage: Save=260.89ms
+[2017.12.13-06.06.13:539][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_backMapE1CE23DD44BA21F67F359498DD0DE1EB.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.uasset'
+[2017.12.13-06.06.13:545][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.uasset
+[2017.12.13-06.06.13:651][475]LogSavePackage: Save=92.65ms
+[2017.12.13-06.06.13:652][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_G_maple86A3A4AE422EB8D60D5335B6D8F64E49.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.uasset'
+[2017.12.13-06.06.13:657][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.14:036][475]LogSavePackage: Save=361.10ms
+[2017.12.13-06.06.14:036][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_frontMapleLeD8DA83CD4D0A8483C93FEA981CAD6D44.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.uasset'
+[2017.12.13-06.06.14:042][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.uasset
+[2017.12.13-06.06.14:340][475]LogSavePackage: Save=280.26ms
+[2017.12.13-06.06.14:340][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_frontMapleLeBAFEA96E407361E253BAB39807FD9396.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.uasset'
+[2017.12.13-06.06.14:347][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.uasset
+[2017.12.13-06.06.14:454][475]LogSavePackage: Save=92.50ms
+[2017.12.13-06.06.14:455][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_G_mapleLeaf_D850371541F4915955728DBD06F0964F.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.uasset'
+[2017.12.13-06.06.14:461][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.14:870][475]LogSavePackage: Save=379.32ms
+[2017.12.13-06.06.14:870][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_backMapB56DEC364F717577461A0D8E18E883E1.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.uasset'
+[2017.12.13-06.06.14:876][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.uasset
+[2017.12.13-06.06.15:171][475]LogSavePackage: Save=255.26ms
+[2017.12.13-06.06.15:171][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_backMap0FC32509441C3EDBF97AEAAE65CC25BD.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.uasset'
+[2017.12.13-06.06.15:178][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.uasset
+[2017.12.13-06.06.15:314][475]LogSavePackage: Save=101.96ms
+[2017.12.13-06.06.15:314][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_back_G_mapleD368A2EF4D02AE4160188B9429A088F8.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.uasset'
+[2017.12.13-06.06.15:321][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.15:738][475]LogSavePackage: Save=375.10ms
+[2017.12.13-06.06.15:738][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_frontMapleLe25CA6FCA4ABC61DC233A5FB47BD1F28D.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.uasset'
+[2017.12.13-06.06.15:759][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.uasset
+[2017.12.13-06.06.16:118][475]LogSavePackage: Save=319.91ms
+[2017.12.13-06.06.16:118][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_frontMapleLe7D28ED084E80B888C34E91B39981B6E8.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.uasset'
+[2017.12.13-06.06.16:125][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.uasset
+[2017.12.13-06.06.16:279][475]LogSavePackage: Save=119.67ms
+[2017.12.13-06.06.16:279][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/Acer_Leaf_Two_Sided_G_mapleLeaf_75D9636B40D74805161FCB978CE3C51F.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.uasset'
+[2017.12.13-06.06.16:286][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.16:842][475]LogSavePackage: Save=514.21ms
+[2017.12.13-06.06.16:842][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_HumanBody_blinn1_BaB9E754524FD856E2864F7A9EDE685263.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.uasset'
+[2017.12.13-06.06.16:850][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.uasset
+[2017.12.13-06.06.17:595][475]LogSavePackage: Save=713.42ms
+[2017.12.13-06.06.17:595][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_HumanBody_blinn1_No024457044F048E38F56877B832256B77.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.uasset'
+[2017.12.13-06.06.17:602][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.uasset
+[2017.12.13-06.06.18:300][475]LogSavePackage: Save=615.24ms
+[2017.12.13-06.06.18:300][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_HumanBody_blinn1_Oc15B4E36C489BC8A5EA66ED806DCEB57C.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.uasset'
+[2017.12.13-06.06.18:307][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.18:896][475]LogSavePackage: Save=559.97ms
+[2017.12.13-06.06.18:896][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_pants_Mat_BaseColor7EB60AB045235E1B49C8618B5E462E80.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_BaseColor.uasset'
+[2017.12.13-06.06.18:902][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_BaseColor.uasset
+[2017.12.13-06.06.19:331][475]LogSavePackage: Save=399.03ms
+[2017.12.13-06.06.19:331][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_pants_Mat_Normal34819FA74202F9C1529F1FA0DD20798A.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_Normal.uasset'
+[2017.12.13-06.06.19:337][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_Normal.uasset
+[2017.12.13-06.06.19:679][475]LogSavePackage: Save=313.81ms
+[2017.12.13-06.06.19:679][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_pants_Mat_Occlusion21269B8B4D2E9A0C659038B065C221C5.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_OcclusionRoughnessMetallic.uasset'
+[2017.12.13-06.06.19:685][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.20:632][475]LogSavePackage: Save=912.53ms
+[2017.12.13-06.06.20:633][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shirtMat_BaseColor6632288D4F9A9C3D343D89AE46928A5C.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.uasset'
+[2017.12.13-06.06.20:640][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.uasset
+[2017.12.13-06.06.21:898][475]LogSavePackage: Save=1219.40ms
+[2017.12.13-06.06.21:898][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shirtMat_Normal47A584134D180AB90024D795FC05C4B2.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.uasset'
+[2017.12.13-06.06.21:906][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.uasset
+[2017.12.13-06.06.22:616][475]LogSavePackage: Save=678.98ms
+[2017.12.13-06.06.22:616][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shirtMat_OcclusionR63B22F1E4DC862939DFDD48EC00EA46A.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.uasset'
+[2017.12.13-06.06.22:623][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.23:083][475]LogSavePackage: Save=432.35ms
+[2017.12.13-06.06.23:083][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shoes_Mat_BaseColor28C77A14412C63EEE7B6ACA24C683023.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_BaseColor.uasset'
+[2017.12.13-06.06.23:089][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_BaseColor.uasset
+[2017.12.13-06.06.23:670][475]LogSavePackage: Save=451.68ms
+[2017.12.13-06.06.23:670][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shoes_Mat_Normal8A5F09834284089D076DF8A8ADC0F79B.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_Normal.uasset'
+[2017.12.13-06.06.23:677][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_Normal.uasset
+[2017.12.13-06.06.24:101][475]LogSavePackage: Save=394.31ms
+[2017.12.13-06.06.24:101][475]LogSavePackage: Moving '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Saved/simpleFarmer_shoes_Mat_Occlusion6DB2CC034BA3EBFF709299B191D5CDF0.tmp' to '../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_OcclusionRoughnessMetallic.uasset'
+[2017.12.13-06.06.24:108][475]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset box_big from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_big.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset box_small from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/box_small.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Grape_Sapling from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/Grape_Sapling.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset missile from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/missile.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset rock_1 from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_1.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset rock_2 from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_2.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset rock_3 from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/rock_3.fbx.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.
+[2017.12.13-06.06.27:141][566]AssetReimport: Importing new asset /Game/Assets/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_back_backMapleLeaf from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_frontMapleLeaf from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_frontMapleLeaf_NRM from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset Acer_Leaf_Two_Sided_G_mapleLeaf_alpha from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/Grape_Sapling.fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_HumanBody_blinn1_BaseColor from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_HumanBody_blinn1_Normal from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_pants_Mat_BaseColor from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_BaseColor.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_pants_Mat_Normal from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_Normal.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_pants_Mat_OcclusionRoughnessMetallic from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/pantsMat/simpleFarmer_pants Mat_OcclusionRoughnessMetallic.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shirtMat_BaseColor from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shirtMat_Normal from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shirtMat_OcclusionRoughnessMetallic from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shoes_Mat_BaseColor from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_BaseColor.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shoes_Mat_Normal from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_Normal.png.
+[2017.12.13-06.06.27:141][566]AssetReimport: Reimported asset simpleFarmer_shoes_Mat_OcclusionRoughnessMetallic from C:/Users/dtlaw/Documents/GameDev/ue4project/Content/Assets/materials/shoesMat/simpleFarmer_shoes Mat_OcclusionRoughnessMetallic.png.
+[2017.12.13-06.06.43:643][970]SourceControl: On branch master
+[2017.12.13-06.06.43:643][970]SourceControl: Your branch is up-to-date with 'origin/master'.
+[2017.12.13-06.06.43:643][970]SourceControl: Changes not staged for commit:
+[2017.12.13-06.06.43:643][970]SourceControl:   (use "git add <file>..." to update what will be committed)
+[2017.12.13-06.06.43:643][970]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.12.13-06.06.43:643][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.43:643][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_G_mapleLeaf_alpha.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_back_backMapleLeaf_NRM.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/Grape_Sapling_fbm/Acer_Leaf_Two_Sided_frontMapleLeaf_NRM.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_BaseColor.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_Normal.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/humanSkinMat/simpleFarmer_HumanBody_blinn1_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_BaseColor.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_Normal.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/pantsMat/simpleFarmer_pants_Mat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_BaseColor.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_Normal.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shirtMat/simpleFarmer_shirtMat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_BaseColor.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_Normal.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/Assets/materials/shoesMat/simpleFarmer_shoes_Mat_OcclusionRoughnessMetallic.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Content/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Intermediate/CachedAssetRegistry.bin
+[2017.12.13-06.06.43:644][970]SourceControl: 	modified:   Intermediate/ReimportCache/3688439234.bin
+[2017.12.13-06.06.43:645][970]SourceControl: 	modified:   Saved/Autosaves/PackageRestoreData.json
+[2017.12.13-06.06.43:645][970]SourceControl: 	modified:   Saved/Logs/MyProject3.log
+[2017.12.13-06.06.43:645][970]SourceControl: Untracked files:
+[2017.12.13-06.06.43:645][970]SourceControl:   (use "git add <file>..." to include in what will be committed)
+[2017.12.13-06.06.43:645][970]SourceControl: 	Content/Assets/Grape_Sapling_fbm/
+[2017.12.13-06.06.43:645][970]SourceControl: no changes added to commit (use "git add" and/or "git commit -a")
+[2017.12.13-06.06.50:002][314]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.18/Engine/Content/: 'C:/Program Files/Epic Games/UE_4.18/Engine/Content/' is outside repository
+[2017.12.13-06.06.50:224][314]EditorErrors: Warning: No assets to check in!
